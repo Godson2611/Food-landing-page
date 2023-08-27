@@ -1,0 +1,20 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Qwigley&family=Source+Sans+3:wght@400;700;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* todo header style starts here  */
+/* ? nav-bar logo */
+.container-fluid > .h1 {
+  color: var(--theme-primary, #ffb30e);
+  font-family: Qwigley;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 120%;
+}
+/* todo header style ends here  */
