@@ -2,19 +2,407 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Qwigley&family=Source+Sans+3:wght@400;700;900&display=swap");
 
+/* ! genderal formating  */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-/* todo header style starts here  */
-/* ? nav-bar logo */
-.container-fluid > .h1 {
+/* todo roots  */
+:root {
+  --yellow-color: #fdbe35;
+}
+
+/* ? header container style starts here  */
+
+/* * nav style start here  */
+.navbar-brand {
   color: var(--theme-primary, #ffb30e);
   font-family: Qwigley;
   font-size: 80px;
   font-weight: 400;
   line-height: 120%;
 }
-/* todo header style ends here  */
+
+.fa-user {
+  background: var(
+    --yellow-button,
+    linear-gradient(93deg, #ffb800 -47.72%, #ff8a00 136.81%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+}
+
+.open-sea {
+  font-family: Open Sans;
+}
+
+.nav-container > p,
+span > b {
+  color: var(--theme-gray-800, #424242);
+}
+
+.form-control {
+  border: none;
+}
+.form-control::placeholder {
+  font-weight: 700;
+  color: var(--theme-gray-800, #424242);
+}
+
+/* * heading contend style starts here  */
+.heading-main {
+  background-color: var(--yellow-color);
+}
+.left-content > h1 {
+  color: var(--theme-white, #fff);
+  text-shadow: 0px 27px 82px rgba(255, 174, 0, 0.28),
+    0px 14px 15px rgba(255, 174, 0, 0.01);
+  font-family: Qwigley;
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.left-content > p {
+  color: #504f4f;
+  font-family: Source Sans 3;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.buttons {
+  background: var(--theme-white, #fff);
+  width: 856px;
+  /* max-width: 856px; */
+}
+
+.bike-btn {
+  background: rgba(241, 114, 40, 0.1);
+  padding: 10px 24px;
+  color: var(--theme-warning, #f17228);
+  font-family: Source Sans 3;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  border: none;
+}
+
+.bag-btn {
+  border: none;
+}
+
+.header-inputs {
+  background: var(--theme-white, #fff);
+  width: 856px;
+  /* max-width: 856px; */
+}
+
+.header-inputs > input {
+  border: none;
+  background: var(--theme-gray-100, #f5f5f5);
+  padding: 7px 0px 8px 16px;
+  flex: 1 0 0;
+  color: var(--theme-gray-500, #9e9e9e);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.header-inputs > button {
+  background: linear-gradient(96deg, #ff7a7a -39.64%, #f65900 135.31%);
+  padding: 21px 48px;
+  border: none;
+  color: var(--theme-white, #fff);
+  font-family: Source Sans 3;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.margin-top142px {
+  margin-top: 95px;
+}
+.form-container {
+  margin-left: 0px;
+}
+
+/* ? header container style ends here  */
+
+/* ? main container style starts here  */
+/* * group card 1 container style starts here  */
+.card1 > img {
+  width: 357px;
+  height: 301px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.card1 > h5 {
+  color: var(--theme-gray-800, #424242);
+  font-family: Source Sans 3;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.card-body > button {
+  background: rgba(241, 114, 40, 0.2);
+  padding: 8px 16px;
+  border: none;
+  color: var(--theme-warning, #f17228);
+  font-family: Source Sans 3;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.card1-group {
+  margin-top: 95px;
+  margin-bottom: 168px;
+}
+
+/* * group card 2 container style starts here  */
+.card2-group > h1 {
+  color: #f17228;
+  font-family: Source Sans 3;
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 112%;
+  margin-bottom: 48px;
+}
+.card2-group-container {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 5px 27px 11px rgba(255, 181, 21, 0.1);
+  margin-bottom: 199px;
+}
+.card2 > h2 {
+  font-family: Source Sans 3;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 120%;
+  background: linear-gradient(93deg, #fb3c00 -47.72%, #ffb800 136.81%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* * group card 3 container style starts here  */
+.card3-group > h2 {
+  color: var(--theme-gray-900, #212121);
+  font-family: Source Sans 3;
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 112%;
+  margin-bottom: 96px;
+  margin-top: 76px;
+}
+
+.card3 > img {
+  width: 259px;
+  height: 259px;
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+
+.card3 > p {
+  color: var(--theme-gray-800, #424242);
+  font-family: Source Sans 3;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 94px;
+}
+
+.card3-group {
+  background-color: #f6f5ee;
+}
+
+/* * group card 4 container style starts here  */
+
+.card4 > .card-body > .card-title {
+  color: #353535;
+  font-family: Source Sans 3;
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 112%;
+  margin-bottom: 19px;
+}
+
+.yellow-text {
+  color: var(--theme-primary, #ffb30e);
+  font-family: Source Sans 3;
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 112%;
+}
+
+.card-text4 {
+  color: rgba(97, 97, 97, 0.69);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+  width: 407px;
+  margin-bottom: 73.5px;
+}
+
+.btn-4 {
+  color: #fff;
+  font-family: Source 3;
+  text-decoration: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
+  max-width: 407px;
+  padding: 21px 48px;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(
+    --yellow-button,
+    linear-gradient(93deg, #ffb800 -47.72%, #ff8a00 136.81%)
+  );
+  box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29),
+    0px 5px 8px 0px rgba(222, 151, 0, 0.24);
+}
+
+.card4-group {
+  margin-top: 129px;
+  margin-bottom: 130px;
+}
+
+/* * group card 4 container style starts here  */
+.card5-group > h1 {
+  color: var(--theme-gray-900, #212121);
+  font-family: Source Sans 3;
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 112%;
+}
+
+.card5 > h2 {
+  color: var(--theme-gray-800, #424242);
+  font-family: Source Sans 3;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.btn-5 {
+  display: flex;
+  width: 283.4px;
+  padding: 21px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--theme-warning, #f17228);
+  box-shadow: 0px 20px 40px 0px rgba(250, 99, 35, 0.24),
+    0px 5px 10px 0px rgba(253, 114, 92, 0.22);
+  color: var(--theme-white, #fff);
+  text-align: center;
+  font-family: Source Sans 3;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.cards5-1st-group {
+  margin-bottom: 177px;
+}
+.cards5-2nd-group {
+  margin-bottom: 125px;
+}
+
+/* ? main container style ends here  */
+
+/* ? footer container style starts here  */
+footer {
+  background: #090d12;
+}
+.hr-first {
+  margin-top: 75px;
+  margin-bottom: 63px;
+}
+
+.footer-left > div > h2 {
+  color: #fff;
+  font-family: Source Sans 3;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.footer-left > div > p {
+  color: var(--theme-gray-100, #f5f5f5);
+  font-family: Source Sans 3;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.footer-right > h2 {
+  color: #f5f5f5;
+  font-family: Source Sans 3;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+.footer-right > .social-icons > img {
+  color: var(--theme-gray-100, #f5f5f5);
+  font-family: Font Awesome 5 Brands;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.2;
+  line-height: 100%; /* 24px */
+}
+
+.footer-right > h3 {
+  color: #bbb;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.footer-btn {
+  display: flex;
+  width: 133px;
+  padding: 21px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  font-family: Source Sans 3;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  border: none;
+  background: var(
+    --yellow-button,
+    linear-gradient(93deg, #ffb800 -47.72%, #ff8a00 136.81%)
+  );
+  box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29),
+    0px 5px 8px 0px rgba(222, 151, 0, 0.24);
+}
+
+.footer-left {
+  flex: 1;
+  gap: 34px;
+}
+
+.footer-right {
+  flex: 1;
+}
+
+/* ? footer container style ends here  */
