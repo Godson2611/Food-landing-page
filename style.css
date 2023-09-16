@@ -76,7 +76,6 @@ span > b {
 .buttons {
   background: var(--theme-white, #fff);
   width: 856px;
-  /* max-width: 856px; */
 }
 
 .bike-btn {
@@ -97,7 +96,6 @@ span > b {
 .header-inputs {
   background: var(--theme-white, #fff);
   width: 856px;
-  /* max-width: 856px; */
 }
 
 .header-inputs > input {
