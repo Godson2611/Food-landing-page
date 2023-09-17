@@ -18,8 +18,57 @@
   <body>
     <!-- todo header starts here  -->
     <header>
+      <!-- ? navigation bar in responsive starts here  -->
+      <nav class="navbar responsivenavbar badge text-bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-5" href="#">Hot meals</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-warning d-flex px-3 py-2 gap-2 me-5"
+                  type="submit"
+                >
+                  <img src="./img/user.svg" alt="user-image" /> <b>Login</b>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ? navigation bar in responsive ends here  -->
+
       <!-- ? navigation bar starts here  -->
-      <nav class="navbar mx-5">
+      <nav class="navbar visiblenone mx-5">
         <div class="nav-container container-fluid">
           <a class="navbar-brand">Hot Meals</a>
           <p>
@@ -264,7 +313,7 @@
             </div>
           </div>
         </div>
-        <img src="./img/main-food.png" class="img-fluid" alt="main-food" />
+        <img src="./img/main-food.png" class="img-fluid mid-food" alt="main-food" />
       </div>
       <!-- ? 4th main container ends here  -->
 
