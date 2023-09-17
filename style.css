@@ -128,6 +128,12 @@ span > b {
   margin-left: 0px;
 }
 
+.icon-pink-location {
+  position: relative;
+  top: 15px;
+  left: 40px;
+}
+
 /* ? header container style ends here  */
 
 /* ? main container style starts here  */
@@ -444,6 +450,12 @@ footer {
   font-weight: 700;
 }
 
+.mail-icon {
+  position: relative;
+  top: 55px;
+  left: 15px;
+}
+
 /* ? footer container style ends here  */
 
 /* ? responsive navbar style starts here  */
@@ -453,6 +465,12 @@ footer {
 /* ? responsive navbar style ends here  */
 
 /* todo media qurey */
+
+@media (min-width: 1501px) {
+  .mail-icon {
+    display: none;
+  }
+}
 
 @media (max-width: 1585px) {
   html,
@@ -532,6 +550,11 @@ footer {
 
   .right-image {
     display: none;
+  }
+
+  .icon-pink-location {
+    top: 50px;
+    left: 15px;
   }
 
   .form-container {
