@@ -445,3 +445,53 @@ footer {
 }
 
 /* ? footer container style ends here  */
+
+/* todo media qurey */
+
+@media (max-width: 1585px) {
+  .buttons,
+  .header-inputs {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  footer {
+    padding: 20px;
+  }
+
+  .footer-left,
+  .footer-right {
+    flex: 1;
+    width: 100%;
+  }
+
+  .rights {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p1 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .p2 {
+    text-align: center;
+  }
+
+  .footer-two {
+    width: 100%;
+  }
+
+  .footer-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .input-email {
+    width: 100%;
+  }
+}
